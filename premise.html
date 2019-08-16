@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Resources/assets/css/style.css">
-    <title>Summary: MCI vs. X</title>
+    <title>Premise Type</title>
     <link rel="shortcut icon" href="Resources/assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="Resources/assets/images/favicon.ico" type="image/x-icon">
   </head>
@@ -55,18 +55,16 @@
 
         <!-- summary -->
         <div class="col-lg-7">
-          <h1 class="mb-2">Summary: MCI vs. X</h1>
-          <hr class="mr-2">
-          <img class="p-3" src="Resources/assets/images/mci.png" alt="vs. household median income" height="320" width="390" align="left">
-          <p class="pt-1 mr-1">This project's purpose is to show if there is a relationship between Major Crime Indicators (MCI) and four factors: household median income, day of week, time of day and premise type. The MCI data was pulled from Toronto Police Service's Public Data Portal, Boundaries Civic Information API and City of Toronto Open Data Catalog. All 167k crime occurrences from 2014 to 2018 were used for this dataset. Matplotlib was used to make the line plots, which show the relationship between MCI and the four factors. </p>
-          <p class="pl-1 mr-1">The data used for this analysis is a representative of MCI in the city of Toronto from 2014 to 2018. A longer historical snapshot of data may offer more accurate insight. This sites contain visualization, analysis and 5% of the data source.</p>
+          <h1 class="mb-4">Premise Type</h1>
+          <hr class="mr-4">
+          <img class="mb-2 mr-4 pr-5 img-fluid" src="Resources/assets/images/premise.png" alt="vs. premise type">
+          <p class="pt-3 mr-4">The data shows there is a relation between the type of premise and the crime occurrences. We performed the Anova test on the set of MCI across the 24 hours of day F_onewayResult(statistic=108.05844287998815, pvalue=5.150589670998093e-38). The p-value is lower the 0.05 hence we can reject the NULL hypothesis. The relationship between crime and time of day is statistically significant.</p>
         </div><!-- /summary -->
                 
         <!-- visualizations -->
         <div class="card col-lg ml-3">
           <h3 class="pb-4">Visualizations</h3> 
           <div class="row justify-content-center">
-            
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
                 <a href="median.html" >
@@ -113,22 +111,6 @@
           </div>
         </div><!-- /visualizations -->
       </div><!-- /row -->
-    </div><!-- /container -->
-
-    <!-- bottom navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="https://github.com/VanessaVanG/VanessaVanG.github.io" target="_blank">Website Repo</a>
-            <a class="nav-item nav-link" href="https://github.com/VanessaVanG/python-challenge/tree/master/WeatherPy" target="_blank">Weather Analysis Repo</a>
-          </div> -->
-        </div>
-      </div>
-	</nav>    
-
+    </div><!-- /container --> 
   </body>
 </html>
