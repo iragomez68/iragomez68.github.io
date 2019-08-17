@@ -61,13 +61,14 @@
           <h1 class="mb-4">Household Median Income</h1>
           <hr class="mr-4">
           <img class="mb-2 mr-4 pr-5 img-fluid" src="Resources/assets/images/median.png" alt="vs. household median income">
-          <p class="pt-3 mr-4">The lower end of the household median income shows I higher concentration of all MCI. We performed the Anova test on the data with the following results: F_onewayResult(statistic=58.37610293629495, pvalue=2.6781825793278318e-33) P-value ≤ 0.05:  we reject the null hypothesis and conclude that the household median income is statistically significant to the crime occurrences.</p>
+          <p class="pt-3 mr-4">The source data was grouped by MCI and the household median income for all 44 wards to count the number of crimes for these 2 dimensions. The resulting dataframe was pivoted by the MCI to obtain a new dataframe with 44 rows (one for each ward) and 5 columns (one for each MCI). The pivoted dataframe was used to perform the Anova test which yielded a pvalue = 0.5710328536406233 by which we can conclude that there is no significant statistical difference between the median of crime occurrences across the wards (represented by their respective household median income).</p>
           
         </div><!-- /summary -->
                 
         <!-- visualizations -->
         <div class="card col-lg ml-3">
           <h3 class="pb-4">Visualizations</h3> 
+
           <div class="row justify-content-center">
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
@@ -112,6 +113,9 @@
                 </div>
               </div>
             </div>
+          
+          
+
           </div>
         </div><!-- /visualizations -->
       </div><!-- /row -->

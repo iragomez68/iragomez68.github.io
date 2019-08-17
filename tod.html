@@ -61,7 +61,7 @@
           <h1 class="mb-4">Time of Day</h1>
           <hr class="mr-4">
           <img class="mb-2 mr-4 pr-5 img-fluid" src="Resources/assets/images/tod.png" alt="vs. time of day">
-          <p class="pt-3 mr-4">The data shows there is a relation between the time of day and the crime occurrences. We performed the Anova test on the set of MCI across the 5 premise types F_onewayResult(statistic=9.843241490116789, pvalue=0.00014355566838504356). The p-value is lower the 0.05 hence we can reject the NULL hypothesis. The relationship between crime and type of premise is statistically significant.</p>
+          <p class="pt-3 mr-4">The source data was grouped by MCI and the time of day to count the number of crimes for these 2 dimensions. The resulting dataframe was pivoted by the MCI to obtain a new dataframe with 24 rows (one for each hour of the day) and 5 columns (one for each MCI). The pivoted dataframe was used to perform the Anova test which yielded a pvalue = 0.9875659567368055 by which we can conclude that there is no significant statistical difference between the median of crime occurrences across the hours of the day.</p>
         </div><!-- /summary -->
                 
         <!-- visualizations -->

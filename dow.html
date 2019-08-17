@@ -61,7 +61,7 @@
           <h1 class="mb-4">Day of Week</h1>
           <hr class="mr-4">
           <img class="mb-2 mr-4 pr-5 img-fluid" src="Resources/assets/images/dow.png" alt="vs. dow of week">
-          <p class="pt-3 mr-4">The data shows that there is a relationship between day of week and crime occurrence. We performed the Anova test to compare all 5 MCI across the seven days of the week F_onewayResult(statistic=466.9972184056322, pvalue=1.5137362091572156e-26) The p-value is lower the 0.05 hence we can reject the NULL hypothesis. The relationship between crime and day of week is statistically significant.</p>
+          <p class="pt-3 mr-4">The source data was grouped by MCI and the day of the week to count the number of crimes for these 2 dimensions. The resulting dataframe was pivoted by the MCI to obtain a new dataframe with 7 rows (one for each day of the week) and 5 columns (one for each MCI). The pivoted dataframe was used to perform the Anova test which yielded a pvalue = 0.9999953803301733 by which we can conclude that there is no significant statistical difference between the median of crime occurrences across the days of the week.</p>
          
         </div><!-- /summary -->
                 
